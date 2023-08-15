@@ -33,6 +33,7 @@ for i in range(6):
         countNom = ""
 
         while seguir:
+                  
             if len(str(count)) == 1:
                 countNom = "00" + str(count)
             elif len(str(count)) == 2:
@@ -50,6 +51,9 @@ for i in range(6):
                     #time.sleep(0.2) #delay por si acaso 
             else:
                 os.chdir(os.path.join(ruta, nomCarpetas[i]))
-                seguir = False
+                seguir = False      
+        print(f"Descarga del libro {libros[i][y]} completada")
 
-          print(f"Descarga del libro {libros[i][y] completada")
+            
+
+          
