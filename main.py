@@ -22,6 +22,7 @@ for i in range(6):
     os.chdir(ruta_destino)
 
     for y in range(len(libros[i])):
+        print(f"Descargando {libros[i][y]}...")      
 
         ruta_libro = os.path.join(os.getcwd(), libros[i][y])
         os.mkdir(ruta_libro)
@@ -50,3 +51,5 @@ for i in range(6):
             else:
                 os.chdir(os.path.join(ruta, nomCarpetas[i]))
                 seguir = False
+
+          print(f"Descarga del libro {libros[i][y] completada")
