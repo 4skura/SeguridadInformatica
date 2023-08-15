@@ -46,6 +46,7 @@ for i in range(6):
                 with open(ruta_destino, "wb") as archivo:
                     archivo.write(response.content)
                     count += 1
+                    #time.sleep(0.5) #delay por si acaso 
             else:
                 os.chdir(os.path.join(ruta, nomCarpetas[i]))
                 seguir = False
